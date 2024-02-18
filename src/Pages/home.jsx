@@ -2,6 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import Navbar from "../components/Layouts/Navbar";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import React from 'react';
 
 MyLink.propTypes = {
     to: PropTypes.string.isRequired,
@@ -31,6 +32,13 @@ const HomePage = () => {
     const isMobile = useMediaQuery({
         query: '(max-width: 768px)'
     });
+
+    const [copied, setCopied] = React.useState(false);
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(window.location.href);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1500); 
+    }
     
 
     return (
@@ -46,8 +54,11 @@ const HomePage = () => {
                             <h1 className="font-bold text-5xl mb-1">I am <span className="font-bold">Rahmat</span></h1>
                             <h3 className="font-medium text-3xl mb-1">Front End Web Developer and UI/UX Design</h3>
                             <h4 className="font-medium text-2xl mb-1">But i also like to code some time</h4>
-                            <div className="mt-4">
+                            <div className="mt-4 flex">
                                 <Link to="/contact" className="inline-block px-6 py-3 text-white bg-teal-600 rounded-md shadow-md hover:bg-teal-700 transition-colors duration-300">Schedule a Call</Link>
+                                <div className="inline-block cursor-pointer px-6 py-3 mx-4 text-white bg-teal-600 rounded-md shadow-md hover:bg-teal-700 transition-colors duration-300" onClick={copyToClipboard}>
+                                    {copied ? 'Copied!' : 'Share My Portfolio'}
+                                </div>
                             </div>
 
                             <div className="mt-10">

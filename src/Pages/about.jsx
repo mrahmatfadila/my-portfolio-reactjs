@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import Navbar from "../components/Layouts/Navbar";
-import { CarouselCustomNavigation } from "../components/Elements/CarouselCustomNavigation";
+import { HeroDesktop, HeroMobileTablets} from "../components/Elements/CarouselCustomNavigation";
 
 const AboutPage = () => {
     const isDesktopOrLaptop = useMediaQuery({
@@ -21,6 +21,7 @@ const AboutPage = () => {
             {isDesktopOrLaptop && 
                 <div>
                     <Navbar/>
+                    <HeroDesktop/>
                 </div>
             }
 
@@ -28,6 +29,7 @@ const AboutPage = () => {
             {isTablets && 
                 <div>
                     <Navbar/>
+                    <HeroMobileTablets />
                 </div>
             }
 
@@ -36,7 +38,7 @@ const AboutPage = () => {
                 <div>
                     <Navbar/>
                     <div>
-                        <CarouselCustomNavigation />
+                        <HeroMobileTablets />
                         <div className="flex justify-center">
                             <p>About</p>
                         </div>
