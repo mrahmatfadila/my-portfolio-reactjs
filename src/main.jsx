@@ -1,46 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HomePage from './Pages/home'
-import AboutPage from './Pages/about'
-import SkillPage from './Pages/skill'
-import WorkPage from './Pages/work'
-import ContactPage from './Pages/contact'
-import DetailWork from './Pages/detailWork'
-import { ThemeProvider } from '@material-tailwind/react'
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <HomePage />,
-  },
-  {
-    path: '/about',
-    element: <AboutPage/>
-  },
-  {
-    path: '/mywork',
-    element: <WorkPage/>
-  },
-  {
-    path: '/myskill',
-    element: <SkillPage/>
-  },
-  {
-    path: '/contact',
-    element: <ContactPage/>
-  },
-  {
-    path: '/detailWork',
-    element: <DetailWork/>
-  }
-])
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css';
+import { ThemeProvider } from '@material-tailwind/react';
+import HomePage from './Pages/home';
+import AboutPage from './Pages/about';
+import SkillPage from './Pages/skill';
+import WorkPage from './Pages/work';
+import ContactPage from './Pages/contact';
+import DetailWork from './Pages/detailWork';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <ThemeProvider>
-        <RouterProvider router={router} />
-      </ThemeProvider>
-  </React.StrictMode>,
-)
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/mywork" element={<WorkPage />} />
+          <Route path="/myskill" element={<SkillPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/detailWork" element={<DetailWork />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
+  </React.StrictMode>
+);
