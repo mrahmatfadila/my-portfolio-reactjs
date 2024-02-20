@@ -67,10 +67,10 @@ const HomePage = () => {
                                     <Link to={"/mywork"} className="text-blue-600 font-bold">View All</Link>
                                 </div>
                                 <div className="grid grid-cols-4 gap-5">
-                                    <MyLink to={"/detailWork"} src={"/work1.jpg"} title={"Gambar Work 1"}/>
-                                    <MyLink to={"/detailWork"} src={"/work2.jpg"} title={"Gambar Work 2"}/>
-                                    <MyLink to={"/detailWork"} src={"/work3.jpg"} title={"Gambar Work 3"}/>
-                                    <MyLink to={"/detailWork"} src={"/work4.jpg"} title={"Gambar Work 4"}/>
+                                    <MyLink to={"https://www.figma.com/file/QNssRyC774p6Hm7zAv9gCO/Untitled?type=design&node-id=0%3A1&mode=dev&t=1CxNULQzGT9xOMIB-1"} src={"/work1.png"} title={"Gambar Work 1"}/>
+                                    <MyLink to={"https://www.figma.com/file/AcYQPk70a71gfBFeZ9M7DA/Untitled?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work2.png"} title={"Gambar Work 2"}/>
+                                    <MyLink to={"https://www.figma.com/file/H2ypv960djsEcViWxX7gJn/E-commerce-MatStore?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work3.png"} title={"Gambar Work 3"}/>
+                                    <MyLink to={"https://www.figma.com/file/C57h1jE1YFkqjuPws7sbbn/Untitled?type=design&node-id=0%3A1&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work4.png"} title={"Gambar Work 4"}/>
                                     
                                 </div>
                             </div>
@@ -101,12 +101,12 @@ const HomePage = () => {
                         <Link to={"/mywork"} className="text-blue-600 font-bold mb-10">View All</Link>
                     </div>
                     <div className="grid grid-cols-3 gap-10 mx-5 mb-[60px]">
-                        <MyLink to={"/detailWork"} src={"/work1.jpg"} title={"Gambar Work 1"}/>
-                        <MyLink to={"/detailWork"} src={"/work2.jpg"} title={"Gambar Work 2"}/>
-                        <MyLink to={"/detailWork"} src={"/work3.jpg"} title={"Gambar Work 3"}/>
-                        <MyLink to={"/detailWork"} src={"/work4.jpg"} title={"Gambar Work 4"}/>
-                        <MyLink to={"/detailWork"} src={"/work2.jpg"} title={"Gambar Work 5"}/>
-                        <MyLink to={"/detailWork"} src={"/work4.jpg"} title={"Gambar Work 6"}/>
+                        <MyLink to={"https://www.figma.com/file/QNssRyC774p6Hm7zAv9gCO/Untitled?type=design&node-id=0%3A1&mode=dev&t=1CxNULQzGT9xOMIB-1"} src={"/work1.png"} title={"Gambar Work 1"}/>
+                        <MyLink to={"https://www.figma.com/file/AcYQPk70a71gfBFeZ9M7DA/Untitled?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work2.png"} title={"Gambar Work 2"}/>
+                        <MyLink to={"https://www.figma.com/file/H2ypv960djsEcViWxX7gJn/E-commerce-MatStore?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work3.png"} title={"Gambar Work 3"}/>
+                        <MyLink to={"https://www.figma.com/file/C57h1jE1YFkqjuPws7sbbn/Untitled?type=design&node-id=0%3A1&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work4.png"} title={"Gambar Work 4"}/>
+                        <MyLink to={"https://www.figma.com/file/AcYQPk70a71gfBFeZ9M7DA/Untitled?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work2.png"} title={"Gambar Work 5"}/>
+                        <MyLink to={"https://www.figma.com/file/C57h1jE1YFkqjuPws7sbbn/Untitled?type=design&node-id=0%3A1&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work4.png"} title={"Gambar Work 6"}/>
                         
                     </div>
                 </div>
@@ -137,10 +137,10 @@ const HomePage = () => {
                         <Link to={"/mywork"} className="text-blue-600 font-bold">View All</Link>
                     </div>
                     <div className="grid grid-cols-2 gap-5 mx-5 mb-[60px]">
-                        <MyLink to={"/detailWork"} src={"/work1.jpg"} title={"Gambar Work 1"}/>
-                        <MyLink to={"/detailWork"} src={"/work2.jpg"} title={"Gambar Work 2"}/>
-                        <MyLink to={"/detailWork"} src={"/work3.jpg"} title={"Gambar Work 3"}/>
-                        <MyLink to={"/detailWork"} src={"/work4.jpg"} title={"Gambar Work 4"}/>
+                        <MyLink to={"https://www.figma.com/file/QNssRyC774p6Hm7zAv9gCO/Untitled?type=design&node-id=0%3A1&mode=dev&t=1CxNULQzGT9xOMIB-1"} src={"/work1.png"} title={"Gambar Work 1"}/>
+                        <MyLink to={"https://www.figma.com/file/AcYQPk70a71gfBFeZ9M7DA/Untitled?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work2.png"} title={"Gambar Work 2"}/>
+                        <MyLink to={"https://www.figma.com/file/H2ypv960djsEcViWxX7gJn/E-commerce-MatStore?type=design&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work3.png"} title={"Gambar Work 3"}/>
+                        <MyLink to={"https://www.figma.com/file/C57h1jE1YFkqjuPws7sbbn/Untitled?type=design&node-id=0%3A1&mode=dev&t=Mh9WZbGHmoRa9RRr-1"} src={"/work4.png"} title={"Gambar Work 4"}/>
                         
                     </div>
             </div> 
